@@ -1,0 +1,13 @@
+//Breaking styles into variables for global changes.
+//Makes change easier since you have to make changes to one place
+//Only for styles that gets reused a lot
+
+// Colors
+
+//Spacing
+$s-size: 1.2rem;
+$m-size: 1.6rem;
+$l-size: 3.2rem;
+$xl-size: 4.8rem;
+$desktop-breakpoint: 45rem;
+
