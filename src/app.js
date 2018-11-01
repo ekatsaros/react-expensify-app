@@ -14,7 +14,6 @@ import 'react-dates/lib/css/_datepicker.css';
 
 const store = configureStore();
 
-
 // addExpense -> Water bill
 // addExpense -> Gas bill
 // setTextFilter -> bill (2 items) -> water (1 item)
