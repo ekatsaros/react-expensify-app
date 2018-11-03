@@ -14,7 +14,7 @@ module.exports = (env) => {
 
 	entry: './src/app.js',
 	output: {
-		path: path.join(__dirname, 'public'),
+		path: path.join(__dirname, 'public', 'dist'),
 		filename: 'bundle.js'
 	},
 
@@ -49,7 +49,8 @@ module.exports = (env) => {
 	devtool: isProduction ? 'source-map' : 'inline-source-map', // source map takes long to build but suited for production and not loaded only when open dev tools
 	devServer: {
 		contentBase: path.join(__dirname, 'public'),
-		historyApiFallback: true //tell the dev server to serve index.html for all unknown 404s.Handing routing via client side and returnt this page for 404
+		historyApiFallback: true, //tell the dev server to serve index.html for all unknown 404s.Handing routing via client side and returnt this page for 404
+		publicPath: '/dist/'
 	}
 
  };
